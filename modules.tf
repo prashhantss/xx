@@ -22,7 +22,7 @@ module "ec2_instance" {
 module "eks" {
   source = "./modules/eks"
 
-  security_group_ids = var.sg_ids
+  security_group_ids = module.eks_sg.security_group_public
   subnet_ids = var.subnet_ids
   vpc_id = var.vpc_id
   key_name = var.key

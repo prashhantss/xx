@@ -3,7 +3,6 @@ variable "ami-id" {
     default = "ami-07d3a50bd29811cd1"
 }
 
-
 variable "private-key" {
     type = string
     default = "sh"
