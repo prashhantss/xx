@@ -15,7 +15,7 @@ module "vpc" {
 module "ec2_instance" {
   source = "./modules/ec2"
   ami-id        = "ami-07d3a50bd29811cd1"
-  private-key   = "mykey"
+  private-key   = "sh"
   instance_type  = "t2.micro"
 }
 
